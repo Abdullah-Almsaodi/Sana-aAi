@@ -1,0 +1,8 @@
+# Python version
+python==3.9.7
+
+# Required libraries
+nltk==3.6.5
+numpy==1.21.5
+tensorflow==2.8.0
+django==4.0.2

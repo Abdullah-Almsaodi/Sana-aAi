@@ -1,0 +1,99 @@
+{
+    "intents": [{
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good afternoon", "Good evening", "Greetings", "Howdy", "Hi there", "Yo"],
+            "responses": ["Hello! How can I assist you today?", "Hi there! How can I help you?", "Hey! What can I do for you?", "Good [time]! Welcome to our computer science department chatbot.", "Greetings! How may I help you today?", "Hello! Welcome to our chatbot.", "Hey there! How can I assist you?", "Hi! How can I help you today?"],
+            "context_set": ""
+        },
+        {
+            "tag": "courses_info",
+            "patterns": ["What courses does the computer science department offer?", "Can you tell me about the courses in computer science?", "List of computer science courses", "Which subjects are taught in computer science?", "Tell me about computer science courses", "Show me the list of computer science subjects", "What classes are available for computer science students?", "I want to know about CS courses"],
+            "responses": ["The computer science department offers courses such as Introduction to Programming, Data Structures and Algorithms, Database Management Systems, Computer Networks, Artificial Intelligence, and Software Engineering.", "Some of the courses offered in the computer science department include [course1], [course2], [course3], and more.", "Computer science courses cover a wide range of topics including programming, algorithms, databases, networking, AI, and software engineering."],
+            "context_set": ""
+        },
+        {
+            "tag": "registration_deadline",
+            "patterns": ["When is the registration deadline for the upcoming semester?", "What is the registration deadline?", "When do I need to register for the next semester?", "I need to know the registration dates", "Registration deadline for this semester"],
+            "responses": ["The registration deadline for the upcoming semester is [specific date]. Please make sure to complete your registration before the deadline to avoid any issues.", "You need to register for the next semester by [specific date].", "Registration for the upcoming semester closes on [specific date]."],
+            "context_set": ""
+        },
+        {
+            "tag": "faculty_info",
+            "patterns": ["Can you provide information about the faculty members in the computer science department?", "Who are the faculty members in the computer science department?", "Tell me about the professors in computer science.", "Faculty members in CS department", "List of CS faculty members"],
+            "responses": ["Sure! Some of the faculty members in the computer science department include Dr. [Name], Dr. [Name], Prof. [Name], and Dr. [Name]. Each faculty member specializes in various areas of computer science and is dedicated to providing quality education and research.", "The computer science department is home to renowned faculty members such as Dr. [Name], Prof. [Name], Dr. [Name], and Dr. [Name]."],
+            "context_set": ""
+        },
+        {
+            "tag": "course_requirements",
+            "patterns": ["What are the prerequisites for [course]?", "Can you tell me the requirements for [course]?", "What do I need to take before [course]?", "Prerequisites for [course]", "Pre-reqs for [course]", "I want to know about course prerequisites"],
+            "responses": ["The prerequisites for [course] include [prerequisite1], [prerequisite2], and [prerequisite3].", "To enroll in [course], you need to have completed [prerequisite1] and [prerequisite2]."],
+            "context_set": ""
+        },
+        {
+            "tag": "class_schedule",
+            "patterns": ["Where can I find the schedule for [course]?", "What are the class timings for [course]?", "Is there a schedule for [course]?", "When are the classes for [course]?", "Timings for [course]"],
+            "responses": ["You can find the schedule for [course] on the university's website under the computer science department section.", "The class timings for [course] are [timings].", "The schedule for [course] can be accessed through the university's online portal."],
+            "context_set": ""
+        },
+        {
+            "tag": "assignment_submission",
+            "patterns": ["How do I submit assignments?", "Where should I submit my assignments?", "Is there a specific platform for assignment submission?", "Submission process for assignments", "How to turn in assignments"],
+            "responses": ["Assignments should be submitted through the university's online learning management system (LMS). You will find the submission portal under the course section on the LMS.", "You can submit your assignments via the course's online platform. Make sure to follow the instructions provided by your instructor."],
+            "context_set": ""
+        },
+        {
+            "tag": "academic_advising",
+            "patterns": ["How can I get academic advising?", "Where can I find academic advisors?", "Is there someone who can help me with course selection?", "I need guidance on course selection"],
+            "responses": ["For academic advising, you can visit the computer science department office during office hours or schedule an appointment with your assigned academic advisor.", "Academic advisors are available to assist you with course selection, career planning, and academic support. You can book an appointment through the university's advising portal."],
+            "context_set": ""
+        },
+        {
+            "tag": "library_access",
+            "patterns": ["How can I access library resources?", "Is there a library for computer science students?", "What are the library hours?", "Library access for CS students"],
+            "responses": ["Computer science students have access to the university library. You can find information about library hours and resources on the library's website or by visiting the library in person.", "To access library resources, you can use your student ID card to check out books and access online databases."],
+            "context_set": ""
+        },
+        {
+            "tag": "career_services",
+            "patterns": ["Are there career services available for computer science students?", "How can I get assistance with job placement?", "Can you help me with my resume?", "Career support for CS students"],
+            "responses": ["Yes, the university offers career services for computer science students. You can visit the career services office for assistance with job placement, resume building, interview preparation, and more.", "Career advisors are available to help you explore career options, develop job search strategies, and enhance your professional skills. Schedule an appointment through the career services website."],
+            "context_set": ""
+        },
+        {
+            "tag": "course_feedback",
+            "patterns": ["How can I provide feedback on a course?", "Is there a way to give feedback on my classes?", "Can I submit course evaluations online?"],
+            "responses": ["You can provide feedback on your courses through the university's course evaluation system. Look out for email notifications or check your course dashboard for evaluation links.", "Course feedback forms are available online through the university's portal. Your feedback helps us improve the quality of education and teaching methods."],
+            "context_set": ""
+        },
+        {
+            "tag": "technical_support",
+            "patterns": ["How do I get technical support for online platforms?", "Who can help me with technical issues related to my courses?", "I'm facing technical difficulties with the course website."],
+            "responses": ["For technical support, you can contact the university's IT helpdesk. They provide assistance with online platforms, course websites, and other technical issues.", "If you encounter technical difficulties with course websites or online platforms, reach out to the IT support team for prompt assistance."],
+            "context_set": ""
+        },
+        {
+            "tag": "graduation_requirements",
+            "patterns": ["What are the graduation requirements for computer science students?", "How do I know if I'm eligible for graduation?", "Can you explain the graduation process?"],
+            "responses": ["To graduate with a degree in computer science, you need to fulfill certain requirements including completing the required courses, maintaining a minimum GPA, and fulfilling any additional departmental requirements.", "The graduation requirements for computer science students vary based on your program and degree track. You can consult with your academic advisor for personalized guidance on graduation requirements."],
+            "context_set": ""
+        },
+        {
+            "tag": "internship_opportunities",
+            "patterns": ["Are there internship opportunities for computer science students?", "How can I find internships related to my field?", "Can you provide information on internships?"],
+            "responses": ["Yes, there are internship opportunities available for computer science students. You can explore internship listings on the university's career services website, job boards, and industry-specific websites.", "Internship opportunities for computer science students are available in various industries including tech companies, startups, research labs, and government agencies. Stay updated on internship postings through career services announcements and networking events."],
+            "context_set": ""
+        },
+        {
+            "tag": "study_abroad",
+            "patterns": ["Can computer science students study abroad?", "Are there study abroad programs for CS students?", "How can I participate in a study abroad program?"],
+            "responses": ["Yes, computer science students can participate in study abroad programs. Explore study abroad opportunities through the university's international programs office and consult with your academic advisor to plan your study abroad experience.", "Study abroad programs for computer science students offer unique opportunities to gain global perspectives, explore different cultures, and enhance your academic and professional skills. Start your study abroad journey by researching available programs and meeting with study abroad advisors."],
+            "context_set": ""
+        },
+        {
+            "tag": "online_resources",
+            "patterns": ["Are there online resources available for computer science students?", "How can I access online resources for my courses?", "Where can I find study materials online?"],
+            "responses": ["Yes, there are various online resources available for computer science students including lecture notes, textbooks, video tutorials, and coding exercises. You can access online resources through the university's learning management system (LMS), library databases, and online learning platforms.", "Online resources such as lecture recordings, e-books, and practice exercises are available to computer science students through the university's online platforms. Make the most of these resources to enhance your learning experience and academic success."],
+            "context_set": ""
+        }
+    ]
+}

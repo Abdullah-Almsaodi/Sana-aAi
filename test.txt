@@ -1,0 +1,79 @@
+
+    <!-- Add this script section -->
+<script>
+    // Function to handle sending messages
+    function sendMessage() {
+        // Get input from textarea
+        var userInput = document.getElementById('chatInput').value;
+
+        // Display the user's message in the chat
+        displayMessage('User', userInput);
+
+        // Clear the textarea
+        document.getElementById('chatInput').value = '';
+
+        // Scroll to the bottom of the chat section with smooth animation
+        scrollToBottom();
+
+        // Return false to prevent the form from actually submitting
+        return false;
+    }
+
+    // Function to display messages in the chat
+    function displayMessage(sender, message) {
+        // Replace this with your logic to display messages
+        var chatSection = document.querySelector('.chat-section');
+
+        var messageCard = document.createElement('div');
+        messageCard.className = 'chat-section-message-card';
+
+        var avatar = document.createElement('img');
+        avatar.src = sender === 'Bot' ? '{% static 'frontend/images/logo/SVG/IntelliAI_Logo_Icon.svg' %}' : '{% static 'frontend/images/avatar/Abdullah.jpg' %}';
+        avatar.alt = '';
+        avatar.draggable = false;
+
+        var messageItem = document.createElement('div');
+        messageItem.className = 'chat-section-message-item';
+        messageItem.innerHTML = '<p>' + message + '</p>';
+
+        var messageActions = document.createElement('div');
+        messageActions.className = 'chat-section-message-actions';
+        messageActions.innerHTML = getCurrentTime(); // Add a function to get the current time
+
+        messageCard.appendChild(avatar);
+        messageCard.appendChild(messageItem);
+        messageCard.appendChild(messageActions);
+
+        chatSection.appendChild(messageCard);
+    }
+
+    // Function to get the current time in the format HH:mm:ss
+    function getCurrentTime() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+
+        // Add leading zeros if needed
+        hours = hours < 10 ? '0' + hours : hours;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+        return hours + ':' + minutes + ':' + seconds;
+    }
+
+    // Function to scroll to the bottom of the chat section with smooth animation
+    function scrollToBottom() {
+        var chatSection = document.querySelector('.chat-section');
+        var lastMessage = chatSection.lastElementChild;
+        lastMessage.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Add event listener for Enter key press
+    document.getElementById('chatInput').addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            sendMessage();
+        }
+    });
+</script>
